@@ -6,3 +6,7 @@ Voici mon journal personnel de développeur dans lequel je place toutes mes peti
 
 - Les **mots clés** permettront de lister tous les éléments à retenir concernant l'élément du journal ajouté. Cela peut par exemple contenir le langage, la technologie, le type d'enregistrement etc. 
 - La **solution** pourra tout aussi bien décrire la façon de résoudre le problème tout en essayant de tirer une réflexion sur le sujet problématique. Pourquoi ce problème est-il apparu ? Pourquoi le résoudre de telle ou telle manière etc.
+
+## Liste des enregistrements
+
+- 03/07/2023 - Could not load assembly - Lors de l'éxecution d'une application web, erreur à l'exécution: "Could not load file or assembly" provenant de l'analyse d'une DLL emballée - EID; ATEL; Assembly; .NET; DLL - Un paquet ATEL n'a pas forcément de tous les pré-requis lors de la compilation. En revanche, lors de l'exécution de l'application, certaines DLL ont besoin d'être présentes dans le dossier bin de l'application. Dans ce cas là, il faut bien vérifier que la DLL a bien été embarqué lors de la configuration du paquet en tant que paquet emaballé et non seulement en tant que pré-requis.
