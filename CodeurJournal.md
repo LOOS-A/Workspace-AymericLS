@@ -75,3 +75,10 @@ public string compute(){
 }
 ```
 - 01/09/2023 - Project file must include the .net framework assembly windowsbase - Lors de la compilation d'une application de type .NET avec des fichiers sources utilisés pour l'affichage de messages d'erreurs, il peut arriver cette erreur. - .NET; DLL; Devbooster; Microsoft; Visual Studio - Il faut s'assurer en fait que le fichier XML/XAML permettant d'afficher les messages d'erreurs soit défini avec un "Build Action" de type "Embeded Resource" et non autre chose. La modification est effective immédiatement. Pas besoin de relancer Visual Studio.
+
+# Tips & Tricks Macos
+
+## Caractère spéciaux
+
+- Comment écrire un ~ (tild) ? Option + n
+- Comment écrire un | (pipe) ? Sift + Option + l
