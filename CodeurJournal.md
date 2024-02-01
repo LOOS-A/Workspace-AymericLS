@@ -2,6 +2,7 @@
   - [Liste des enregistrements](#liste-des-enregistrements)
 - [Tips \& Tricks Macos](#tips--tricks-macos)
   - [Caractère spéciaux](#caractère-spéciaux)
+- [Tips \& Tricks C#](#tips--tricks-c)
 
 
 # Journal personnel
@@ -88,3 +89,55 @@ public string compute(){
 
 - Comment écrire un ~ (tild) ? Option + n
 - Comment écrire un | (pipe) ? Sift + Option + l
+
+# Tips & Tricks C#
+
+Bien sûr, voici quelques fonctionnalités clés de LINQ (Language Integrated Query) en C# avec des exemples de code :
+
+1. **Filtrage** : Utilisez la clause `where` pour filtrer les éléments d'une collection.
+
+```csharp
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+var evenNumbers = numbers.Where(n => n % 2 == 0);
+```
+
+2. **Projection** : Utilisez `select` pour transformer les éléments d'une collection.
+
+```csharp
+var squares = numbers.Select(n => n * n);
+```
+
+3. **Tri** : Utilisez `OrderBy` ou `OrderByDescending` pour trier une collection.
+
+```csharp
+var sortedNumbers = numbers.OrderByDescending(n => n);
+```
+
+4. **Regroupement** : Utilisez `GroupBy` pour regrouper les éléments d'une collection en fonction d'une clé.
+
+```csharp
+List<string> fruits = new List<string> { "apple", "banana", "cherry", "date" };
+var groupedFruits = fruits.GroupBy(f => f.First());
+```
+
+5. **Jointure** : Utilisez `Join` pour combiner deux collections en fonction d'une clé commune.
+
+```csharp
+List<int> ids = new List<int> { 1, 2, 3 };
+List<string> names = new List<string> { "one", "two", "three" };
+var pairs = ids.Join(names, id => id, name => name.Length, (id, name) => new { id, name });
+```
+
+6. **Agrégation** : Utilisez des méthodes comme `Count`, `Sum`, `Max`, `Min`, et `Average` pour calculer une valeur agrégée à partir d'une collection.
+
+```csharp
+int sum = numbers.Sum();
+```
+
+7. **Quantificateurs** : Utilisez `Any`, `All`, et `Contains` pour vérifier si certains éléments ou tous les éléments d'une collection satisfont une condition.
+
+```csharp
+bool hasOddNumber = numbers.Any(n => n % 2 != 0);
+```
+
+Ces exemples montrent comment LINQ peut être utilisé pour effectuer une variété d'opérations sur des collections en C#, de manière expressive et facile à lire. Notez que LINQ peut également être utilisé pour interroger des bases de données et d'autres sources de données, pas seulement des collections en mémoire.
