@@ -4,7 +4,6 @@
   - [Caractère spéciaux](#caractère-spéciaux)
 - [Tips \& Tricks C#](#tips--tricks-c)
 
-
 # Journal personnel
 
 Voici mon journal personnel de développeur dans lequel je place toutes mes petites astuces et résolutions de problèmes auquels j'ai pu être confronté. La structure des éléments remontés dans ce document étant importante je rappelle la façon de les ajouter.
